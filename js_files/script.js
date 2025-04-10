@@ -31,3 +31,18 @@ function getHumanChoice() {
 }
 
 getHumanChoice();
+
+// ~~~~~~~~ Step #3 Declare scores
+
+// Create two variables "humanScore" and "computerScore" in the global scope
+// Assign it a value of 0 initially
+let humanScore = 0;
+let computerScore = 0;
+
+// ~~~~~~~~ Step #4 Play single round
+
+// Create a function "playRound"
+// Use two parameters "humanChoice" and "computerChoice" which takes both choices as arguments
+// Make "humanChoice" parameter case insensitive
+// Write the code so that the winner is printed based off both choices and game rules
+// Increment the score based on whoever wins the round
