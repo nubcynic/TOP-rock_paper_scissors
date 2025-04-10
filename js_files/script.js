@@ -9,13 +9,25 @@ console.log("Hey Cynic!"); // To check whether js file is linked to html
 function getComputerChoice() {
     let randomValue = Math.floor(Math.random() * 3) + 1;
     if (randomValue === 1) {
-        return "Rock";   
+        return "rock";   
     } else if (randomValue === 2) {
-        return "Paper";
+        return "paper";
     } else {
-        return "Scissor";
+        return "scissor";
     }
 }
 
 getComputerChoice();
 console.log(getComputerChoice());
+
+// ~~~~~~~~ Step #2 Get human choice
+
+// Create function "getHumanChoice"
+// Write code so that the function returns human choice between "rock, paper or scissor"
+
+function getHumanChoice() {
+    let humanChoice = prompt("Choose between Rock, Paper or Scissor. Choices are:\nrock\npaper\nscissor");
+    console.log(humanChoice);
+}
+
+getHumanChoice();
