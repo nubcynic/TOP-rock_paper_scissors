@@ -8,7 +8,14 @@ console.log("Hey Cynic!"); // To check whether js file is linked to html
 
 function getComputerChoice() {
     let randomValue = Math.floor(Math.random() * 3) + 1;
-    console.log(randomValue);
+    if (randomValue === 1) {
+        return "Rock";   
+    } else if (randomValue === 2) {
+        return "Paper";
+    } else {
+        return "Scissor";
+    }
 }
 
 getComputerChoice();
+console.log(getComputerChoice());
