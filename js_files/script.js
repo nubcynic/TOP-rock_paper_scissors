@@ -7,7 +7,7 @@ console.log("Hey Cynic!"); // To check whether js file is linked to html
 // Write code so that above function randomly returns "rock, paper or scissor"
 
 function getComputerChoice() {
-    let randomValue = Math.random() * 3;
+    let randomValue = Math.floor(Math.random() * 3) + 1;
     console.log(randomValue);
 }
 
