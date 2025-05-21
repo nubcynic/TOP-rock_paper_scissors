@@ -55,8 +55,8 @@ btnList.forEach(item => {
 // Everytime button is clicked, run this function 
 function playRound(humanChoice, computerChoice) {
     // when any score reaches 5, alert
-    if (scoreRecordComputer === 5 || scoreRecordHuman === 5) {
-        if (scoreRecordComputer === 5) {
+    if (scoreRecordComputer > 4 || scoreRecordHuman > 4) {
+        if (scoreRecordComputer > 4) {
             alert("Game Ended. Better Luck Next Time!");
         }else {
             alert("Game Ended. You are the WINNER!");
