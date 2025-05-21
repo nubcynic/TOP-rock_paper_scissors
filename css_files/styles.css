@@ -41,6 +41,14 @@ h3 {
     padding-bottom: 8px;
     margin-top: 12px;
     list-style-type: none;
+}
+
+.rule-button {
+    margin-bottom: 12px;
+}
+
+.result-list,
+.rule-container {
     border-bottom: 2px solid rgb(111, 131, 117);
 }
 
