@@ -10,9 +10,19 @@ function getComputerChoice() {
     }
 };
 
+// Reference to the main container of the html
+const container = document.querySelector(".container");
 
-// Reference to icons section which has images and buttons
-const iconSection = document.querySelector(".icons-section");
+// Reference to the parent element of rule button i.e. rule-container div
+const ruleContainer = document.querySelector(".rule-container");
+
+// Reference to the Rule Button
+const ruleButton = document.querySelector(".rule-button");
+
+// Action when rule button is clicked : remove h3, btn and rules list
+ruleButton.addEventListener("click", () => {
+    container.removeChild(ruleContainer);
+});
 
 // Reference to score list
 const humanScore = document.querySelector(".human-score");
@@ -23,7 +33,7 @@ const resultList = document.querySelector(".result-list");
 
 // Reference to all buttons
 
-const btnList = document.querySelectorAll("button");
+const btnList = document.querySelectorAll(".btn");
 
 // Create elements
 const resultListItem = document.createElement("li");
